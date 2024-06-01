@@ -22,6 +22,3 @@ item_b.py: Contém a solução para a proposta de duas novas moedas.
 
 item_c.py: Contém a solução para a proposta de cinco novos valores de moedas, substituindo as atuais.
 
-
-```bash
-pip install itertools
