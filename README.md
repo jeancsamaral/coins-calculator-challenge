@@ -12,6 +12,17 @@ O Banco Central do Brasil deseja criar uma moeda comemorativa de 60 anos e facil
 
 (c) Parar a circulação das moedas atuais e propor cinco novos valores.
 
+# Arquivos
+
+coins_calculator.py: Script principal que contém a lógica para calcular o número médio de moedas.
+
+item_a.py: Contém a solução para a proposta de uma nova moeda.
+
+item_b.py: Contém a solução para a proposta de duas novas moedas.
+
+item_c.py: Contém a solução para a proposta de cinco novos valores de moedas, substituindo as atuais.
+
+
 ## Instalação
 
 Use o controlador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar as dependências.
