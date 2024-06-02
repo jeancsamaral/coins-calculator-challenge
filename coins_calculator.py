@@ -1,5 +1,5 @@
 # Função que calcula o número de moedas para um determinado valor total
-# Abordagem utilizano programação dinâmica
+# Abordagem utilizando programação dinâmica
 def calculate_coins(notes, amount):
     dp = [float('inf')] * (amount + 1)
     dp[0] = 0
