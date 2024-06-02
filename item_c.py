@@ -20,18 +20,22 @@ def process_inner_combination(x, y, z, w, best_combination):
     expected_coins = total_coins / 100
     return expected_coins, x, y, z, w
 
+# Função principal
 def item_c():
     initial_coins = []
-    
+
+    # Calculo dos quocientes da divisão de 100
     for i in range(1, 99):
         currentNumber = int(100 // i)
         if currentNumber not in initial_coins:
             initial_coins.append(currentNumber)
 
+    # Ordenação crescente dos quocientes
     initial_coins = sorted(initial_coins)
     min_expected_coins = float('inf')
     best_combination = None
-
+    
+    # Encontra o melhor set de 5 valores para as moedas
     with concurrent.futures.ProcessPoolExecutor() as executor:
         futures = [executor.submit(process_combination, combination) for combination in combinations(initial_coins, 5)]
         for future in concurrent.futures.as_completed(futures):
@@ -44,7 +48,8 @@ def item_c():
     optimal_y = best_combination[2]
     optimal_z = best_combination[3]
     optimal_w = best_combination[4]
-
+    
+    # Oscila os valores encontrados para otimizá-los
     with concurrent.futures.ProcessPoolExecutor() as executor:
         futures = []
         for x in range(initial_coins[initial_coins.index(best_combination[1])-1], initial_coins[initial_coins.index(best_combination[1])+1]+1):
@@ -61,7 +66,8 @@ def item_c():
                 optimal_y = y
                 optimal_z = z
                 optimal_w = w
-
+    
+    # Fornece o resultado final
     final_result = [best_combination[0]] + [optimal_x, optimal_y, optimal_z, optimal_w]
     print(f"A melhor combinacao de moedas foi {final_result}, que reduz o numero esperado de moedas para {min_expected_coins:.2f}.")
 
