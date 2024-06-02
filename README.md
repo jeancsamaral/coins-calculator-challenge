@@ -1,6 +1,6 @@
 # Coins Calculator Challenge
 
-Os códigos fornecem a solução para cada um dos itens do problema apresentado abaixo. O código para cada item devem ser executados individualmente para a obtenção dos resultados.
+Os códigos fornecem a solução para cada um dos itens do problema apresentado abaixo. Os códigos para cada item devem ser executados individualmente para a obtenção dos resultados.
 
 ## Descrição do Problema
 
