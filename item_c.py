@@ -20,7 +20,7 @@ def process_inner_combination(x, y, z, w, best_combination):
     expected_coins = total_coins / 100
     return expected_coins, x, y, z, w
 
-def find_best_combination():
+def item_c():
     initial_coins = []
     
     for i in range(1, 99):
@@ -66,4 +66,4 @@ def find_best_combination():
     print(f"A melhor combinacao de moedas foi {final_result}, que reduz o numero esperado de moedas para {min_expected_coins:.2f}.")
 
 if __name__ == '__main__':
-    find_best_combination()
+    item_c()
