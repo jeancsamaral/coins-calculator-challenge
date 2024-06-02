@@ -21,6 +21,7 @@ def process_inner_combination(x, y, z, w, best_combination):
     return expected_coins, x, y, z, w
 
 # Função principal
+# Emprego de processamento paralelo
 def item_c():
     initial_coins = []
 
